@@ -17,8 +17,6 @@ class _MainPageState extends State<MainPage> {
 
     if (pickGalleryImage == true) {
       image = await picker.pickImage(source: ImageSource.gallery);
-    } else {
-      image = await picker.pickImage(source: ImageSource.camera);
     }
 
     if (image != null) {
